@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "IPAyy",
+  "version": "1.0",
+  "description": "Converts all text in a page into it's IPA transcription.",
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["src/index.js"],
+      "run_at": "document_end"
+    }
+  ]
+}

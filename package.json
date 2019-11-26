@@ -1,0 +1,16 @@
+{
+  "name": "ipayy",
+  "version": "1.0.0",
+  "description": "Converts all text in a page into it's IPA transcription.",
+  "main": "index.js",
+  "author": "Justin Duch <justin@justinduch.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "node build/buildjson.js"
+  },
+  "devDependencies": {
+    "eslint": "^6.7.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2"
+  }
+}
