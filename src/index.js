@@ -10,12 +10,7 @@ function handleText(textNode) {
 
   words.forEach((word) => {
     const iword = ipa[word.toLowerCase()];
-
-    if (iword !== undefined) {
-      newWords.push(iword);
-    } else {
-      newWords.push(word);
-    }
+    newWords.push(iword === undefined ? word : iword);
   });
 
   textNode.nodeValue = newWords.join(' ');
